@@ -1,0 +1,33 @@
+# Run the docker image locally and test it via the browser.
+
+1 - Create an empty folder and copy paste the source code app.py and the Dockerfile
+	 $ mkdir my-simple-webapp
+	
+2 - Build the image
+	$ docker build . -t my-simple-webapp
+	
+3 -	Port mapping so we can run it in our local host browser
+	$ docker run -p 5000:5000 my-simple-webapp
+
+
+
+# Steps and commands to containerize and push the simple-webapp to the docker hub
+
+1 - Create an empty folder
+ 
+ $ mkdir my-simple-webapp
+
+2 - Copy the source code app.py and the Dockerfile in the folder my-simple-webapp
+
+3 - Use Docker Build commands with your name Tag
+ 	$ docker build . -t mehdiah/my-simple-webapp
+	
+4 - Login to Docker hub via command
+	 $ docker login
+
+5 -	Push it to docker Hub
+	$ docker mehdiah/my-simple-webapp
+	
+	
+	
+	
