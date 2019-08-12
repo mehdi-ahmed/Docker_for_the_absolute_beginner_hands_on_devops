@@ -6,7 +6,7 @@
 2 - Build the image
 	$ docker build . -t my-simple-webapp
 	
-3 -	Port mapping so we can run it in our local host browser
+3 - Port mapping so we can run it in our local host browser
 	$ docker run -p 5000:5000 my-simple-webapp
 
 
@@ -25,7 +25,7 @@
 4 - Login to Docker hub via command
 	 $ docker login
 
-5 -	Push it to docker Hub
+5 - Push it to docker Hub
 	$ docker mehdiah/my-simple-webapp
 	
 	
